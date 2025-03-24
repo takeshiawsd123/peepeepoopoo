@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#form {
+
+  width: 300px;
+  border: 1px solid black;
+  padding: 50px;
+border-radius: 25px;
+background-color: #e8e8e8;
+  margin-left: auto; 
+  margin-right: auto;
+margin-top: 175px;
+    display: block;
+}
+header {
+    background-color: #e8e8e8;;
+    width: 100%;
+    height: 70px;
+    margin: 0; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0; 
+display: none;
+}
+#logo{
+  height: 70px; 
+  width: 90px;
+    position: fixed;
+  display: none;
+}
+
+#table {
+margin-top: 100px; 
+border-spacing: 50px;
+display: none;
+border: 1px solid black;
+margin-left: auto; 
+margin-right: auto; 
+background-color: #e8e8e8;
+}
+#td1, #td2, #td3{
+margin-left: auto; 
+  margin-right: auto;
+   height: 100px; 
+  width: 100px;
+  background-color: #e8e8e8;
+display: none;
+}
+table, td {
+margin-left: auto; 
+margin-right: auto; 
+}
+body{
+background-color: #a7a7a7;
+}
+
+
+
+#img_field, #img_input, #img_table, #img_insert  {
+margin-left: auto; 
+  margin-right: auto;
+   height: 100px; 
+  width: 100px;
+  background-color: #e8e8e8;
+display: none;
+}
+
+#html_guide {
+margin-top: 100px; 
+border-spacing: 50px;
+display: none;
+border: 1px solid black;
+margin-left: auto; 
+margin-right: auto;
+    background-color: #e8e8e8;
+    }
+  
+  
+  #img_hover, #img_display, #img_hw, #img_radius  {
+margin-left: auto; 
+  margin-right: auto;
+   height: 100px; 
+  width: 100px;
+  background-color: #e8e8e8;
+display: none;
+}
+
+#css_guide {
+margin-top: 100px; 
+border-spacing: 50px;
+display: none;
+border: 1px solid black;
+margin-left: auto; 
+margin-right: auto;
+    background-color: #e8e8e8;
+    }
+  
+  
+  #img_dom, #img_jsdis, #img_firstex, #img_lastex  {
+margin-left: auto; 
+  margin-right: auto;
+   height: 100px; 
+  width: 100px;
+  background-color: #e8e8e8;
+display: none;
+}
+
+#js_lesson {
+margin-top: 100px; 
+border-spacing: 50px;
+display: none;
+border: 1px solid black;
+margin-left: auto; 
+margin-right: auto;
+    background-color: #e8e8e8;
+    }
+    
+    #allprod {
+margin-top: 100px; 
+border-spacing: 50px;
+display: none;
+border: 1px solid black;
+margin-left: auto; 
+margin-right: auto;
+    background-color: #e8e8e8;
+    }
+      #img_field, #img_input, #woman1shirt, #woman2shirt  {
+margin-left: auto; 
+  margin-right: auto;
+   height: 100px; 
+  width: 100px;
+  background-color: #e8e8e8;
+display: none;
+}
+  
+    
+    #img_hover:hover{
+        height: 150px; 
+  width: 150px;
+        
+    }
+    
+    
+    #products{
+        
+  display: none;
+text-decoration: none;
+color:black;
+margin-left: 485px;
+margin-top: 7px;
+    }
+    ul, li{
+margin-left: 100px;
+margin-top: 11px;
+display: inline-block;
+}
+    a{
+       text-decoration: none;
+  cursor: pointer;  
+    }
+    #lessonhtml, #input, #lessontable, #insertimg, #hoverring, #displaying, #widhei, #radius, #introjava, #jslesson2, #jslesson3, #jslesson4{
+        display: none;
+        background-color: aliceblue;
+        margin-top: 50px;
+    }
+    fieldset{
+        width: 400px;
+    }
+     #firstr, #secondtr{
+         border-color: black;
+         background-color: white;
+    }
+    #tableid{
+        border-color: black;
+        background-color: black; 
+    }
+    #hab{
+        height: 50px;
+        width: 100px;
+        transition: 1s;
+    }
+    #hab:hover{
+        height: 100px;
+        width: 150px;
+        background-color: aqua;
+    }
+    
+    
+
+</style>
+</head>
+<body>
+
+<header id = "header">
+  <a onclick = "home()"><img id = "logo" src = "adjasee.png" style="object-fit: contain;"> </a>
+<ul>
+
+    <center><li><a id = "products" onclick = "products()">all lessons</a></li></center>
+
+
+</ul>
+
+  
+</header>
+<br>
+
+
+
+
+<div id = "form">  
+
+<center><h2 id = "text1">Sign in</h2>
+<input type="text" id="user" placeholder="username"><br><br>
+<input type="password" id="pass" placeholder="Enter password"><br><br>
+<input type="checkbox" onclick="showpass()">Show Password<br><br>
+<button type="submit" id = "butt" onclick="login()">Login</button>
+
+<!--end of center of login-->
+</center>    
+    </div>
+
+    <!--categories-->
+ 
+
+<table id = "table">
+<tr>
+
+<td>
+    <!--fixed-->
+<a onclick = "all_html()">
+<img id = "td1" src = "htmllogo.png" style="object-fit: contain;">
+    <center>html</center>
+</a>
+</td>
+
+    
+<td>
+<a onclick = "all_css()">
+<img id = "td2" src = "csslogo.png" style="object-fit: contain;">
+    <center>css</center>
+</a>
+</td>
+
+<td>
+    <a onclick = "all_js()" >
+        <img id = "td3" src = "jslogo.png" style="object-fit: contain;">
+        <center>javascript</center>
+    </a>
+</td>
+
+ 
+    
+</tr>
+</table>
+
+ <!--for the html-->
+    
+<table id = "html_guide">
+<tr>
+
+<td>
+    <a onclick = "field_lesson()">
+    <img id = "img_field" src = "fieldset.png">
+        <center>fieldset and legend</center>
+    </a>
+</td>
+
+
+<td>
+<a  onclick = "input_lesson()">
+<img id = "img_input" src = "input.png">
+    <center>input types</center>
+</a>
+</td>
+
+
+<td>
+<a  onclick = "table_lesson()">
+<img id = "img_table" src = "table.png">
+    <center>table</center>
+</a>
+</td>
+
+
+<td>
+<a onclick = "image_lesson()">
+<img id = "img_insert" src = "image.png">
+    <center>inserting images</center>
+</a>
+</td>
+</tr>
+</table>
+
+  <!--for the css-->
+  
+  <table id = "css_guide">
+<tr>
+
+<td>
+<a onclick = "hover_lesson()">
+<img id = "img_hover" src = "hover.png">
+    <center>hovering</center>
+</a>
+</td>
+
+
+<td>
+<a  onclick = "display_lesson()">
+<img id = "img_display" src = "background.png">
+    <center>displays</center>
+</a>
+</td>
+
+
+<td>
+<a  onclick = "hw_lesson()">
+<img id = "img_hw" src = "hw.png">
+    <center>width and height</center>
+</a>
+</td>
+
+
+<td>
+<a onclick = "radius_lesson()">
+<img id = "img_radius" src = "radius.png">
+    <center>radius</center>
+</a>
+</td>
+</tr>
+</table>
+  
+  
+  
+  <table id = "js_lesson">
+<tr>
+
+<td>
+<a onclick = "dom_lesson()">
+<img id = "img_dom" src = "DOM.png">
+    <center>introduction in javascript</center>
+</a>
+</td>
+
+
+<td>
+<a  onclick = "jsdis_lesson()">
+<img id = "img_jsdis" src = "hover.png">
+    <center>display in javascript</center>
+</a>
+</td>
+
+
+<td>
+<a  onclick = "syntax_train()">
+<img id = "img_firstex" src = "train.png">
+    <center>exercise 1</center>
+</a>
+</td>
+
+
+<td>
+<a onclick = "last_lesson()">
+<img id = "img_lastex" src = "train2.png">
+    <center>final exercise</center>
+</a>
+</td>
+</tr>
+</table>
+  
+    
+    
+   <center>  <!--for the lessons in html fieldset-->
+   <div id="lessonhtml">
+  <div>
+    <center>
+      <fieldset>
+        <legend>This is my title</legend>
+        Some text inside the fieldset
+      </fieldset>
+    </center>
+The <code>&lt;fieldset&gt;</code> tag groups related form elements, while the <code>&lt;legend&gt;</code> tag is used within the <code>&lt;fieldset&gt;</code> to provide a caption or title for the grouped elements.<br>
+      now i'll explain it more briefly, for now i'll create a simple fieldset and a legend<fieldset><legend>legend</legend>the box is the fieldset</fieldset>
+      the code for the fieldset and legend looks like this.<br>
+      <code>&lt;fieldset&gt;</code><br>    <code>&lt;legend&gt;</code><br> its up to you on what will be your title, the title should be inside the opening and closing of the legend tag <br><code>&lt;/legend&gt;</code>
+        <br>  this is where you'll put all of the contents of your fieldset. fieldset is commonly used for creating a fill up form. <br><code>/&lt;fieldset&gt;</code>
+      
+  </div>
+</div>
+    </center>
+    
+    
+    <center>  <!--for the lessons in html input types-->
+   <div id="input">
+  <div>
+      <input type="password" placeholder="this is textfield of password"><br><br>
+      <input type= "text" placeholder = "this is a textfield for normal text"><br><br>
+    <input type="button" value="this is a button"><br><br>
+      HTML provides various types of input fields to handle different kinds of data. Input fields are defined using the <code>&lt;input&gt;</code> element, and the type of input is specified with the type attribute. Below is a guide to some input types:<br>
+      <code>&lt;input type="button"&gt;</code><br><br>
+<code>&lt;input type="checkbox"&gt;</code><br><br>
+<code>&lt;input type="color"&gt;</code><br><br>
+<code>&lt;input type="date"&gt;</code><br><br>
+<code>&lt;input type="datetime-local"&gt;</code><br><br>
+<code>&lt;input type="email"&gt;</code><br><br>
+<code>&lt;input type="file"&gt;</code><br><br>
+<code>&lt;input type="hidden"&gt;</code><br><br>
+<code>&lt;input type="image"&gt;</code><br><br>
+<code>&lt;input type="month"&gt;</code><br><br>
+<code>&lt;input type="number"&gt;</code><br><br>
+<code>&lt;input type="password"&gt;</code><br><br>
+<code>&lt;input type="radio"&gt;</code><br><br>
+<code>&lt;input type="range"&gt;</code><br><br>
+<code>&lt;input type="reset"&gt;</code><br><br>
+<code>&lt;input type="search"&gt;</code><br><br>
+<code>&lt;input type="submit"&gt;</code><br><br>
+<code>&lt;input type="tel"&gt;</code><br><br>
+<code>&lt;input type="text"&gt;</code><br><br>
+<code>&lt;input type="time"&gt;</code><br><br>
+<code>&lt;input type="url"&gt;</code><br><br>
+<code>&lt;input type="week"&gt;</code><br><br>
+
+  </div>
+</div>
+    </center>
+    
+    
+    <center>  <!--for the lessons in html table-->
+   <div id="lessontable">
+  <div>
+      <table id = "tableid">
+          <tr id = "firstr">
+              <td >this is a data inside of a table data</td>
+              <td >this is another data in a new table data in the same table row</td>
+          </tr>
+          <tr id = "secondtr">
+              <td >this is an another table data in a new row</td>
+              <td >this is an another table data in the same row</td>
+          </tr>
+      </table>
+     above is a simple code for table, table is commonly used to show sets of datas, such as excel that have many datas inside the table.<br>
+      to create a table you'll need table tag, tr tag and td tag. this is the syntax for the table.<br><br>
+      <code>&lt;table&gt;</code><br><br>
+<code>&lt;tr&gt;</code><br><br>
+<code>&lt;td&gt;</code><br><br> you can insert any text you want or you can also put images<br><br>
+      <code>&lt;/td&gt;</code><br><br>
+<code>&lt;/tr&gt;</code><br><br>
+      
+      <code>&lt;tr&gt;</code><br><br>
+<code>&lt;td&gt;</code><br><br>
+      
+      you can insert any text you want or you can also put images<br><br>
+      
+      <code>&lt;/td&gt;</code><br><br>
+<code>&lt;/tr&gt;</code><br><br>
+      
+<code>&lt;/table&gt;</code><br><br>
+  
+  </div>
+</div>
+    </center>
+    
+    
+    <center>  <!--for the lessons in html inserting image-->
+   <div id="insertimg">
+  <div>
+      <center><img src = "adjasee.png"></center>
+      this is an example of inserting an image in your own website, we use the syntax <code>&lt;img src "your image path"&gt;</code> to make inserting images easier, you can add the image you wanted inside a folder where your html code is located<br><br>
+      for example:<br><br>
+      <code>&lt;img src "image.png"&gt;</code><br><br>
+      this code is way easier, this is called pathing for images<br><br>
+      now if you'll insert an image without pathing the code will be longer<br>
+      example for not pathed image:<br><br>
+       <code>&lt;img src "C:\Users\ASUS VIVOBOOK S14\Desktop\gaming shop/image.png"&gt;</code><br><br>
+      
+      
+  </div>
+</div>
+    </center>
+    
+    
+    
+     <center>  <!--for the lessons in css hover-->
+   <div id="hoverring">
+  <div>
+      <button id = "hab">click me</button><br>
+      this is an example of hover property in css, hover is used to make your website more lively and user friendly. to use hover property you'll need an element and add an ID to the element or add a class, for example you have a button with the ID called "myButton" the css should be like this:<br><br>
+       <code>  #myButton{ height: 50px; width: 100px; transition: 0.5s;}</code><br><br>this syntax is used to set a height and width for the size of your button, and the transition in your css is the seconds for your hover to happen<br><br>
+      and for the syntax of the hover is <br><br><code>  #myButton:hover{ height: 100px; width: 150px; background-color: aqua;}</code><br><br>
+      this css will make your button increase its size and change the color in 0.5 second. you can also experiment with this property to make it more interactive for the users.
+  </div>
+</div>
+    </center>
+    
+    <center>  <!--for the lessons in css display-->
+   <div id="displaying">
+  <div>
+     displaying an element in your website is useful when you'll learn about javascript, let's say for example, you have an element but you don't want it to appear whenever you'll load your page, you can use display: none; property to make your element not appear. there's also many properties for display property<br>for example:<br><br>
+      
+      element1{display: none;}<br>
+      element2{display: inline;}<br>
+      element3{display: block;}<br>
+      element4{display: inline-block;}<br><br>
+      
+  </div>
+</div>
+    </center>
+    
+    
+     <center>  <!--for the lessons in css width and height-->
+   <div id="widhei">
+  <div>
+     in css, the width and height property is so used whenever you wanted to resize an element, specially in images. i'll show an image where i'll apply the width and height property.<br><br>
+      <img src="adjasee.png" style = "width: 300px; height 150px;"><br><br>
+      this image have the width and height property, in this case the image has a width of 300px and 150px, now if you wanted it to be bigger you'll have to adjust the number besides the px, px stands for pixels.<br><br>
+      this is an example for the syntax for width and height property:<br><br>
+      yourElement{width: 300px; height 150px;}
+  </div>
+</div>
+    </center>
+    
+       <center>  <!--for the lessons in css border radius-->
+   <div id="radius">  
+  <div>
+    <img src="hover.png" style="width: 100px; height: 100px; border-radius: 50px;"><br>
+      this css property makes your element have rounder edges, notice that the image is circular, it became circular because it has a 50px for border radius, if you wanted to have noticable rounded edges you can change the pixels or also known as px. ill give an example for more noticable edges for border radius in the same image, i'll apply 5px instead of 50px.<br><br>
+      <img src="hover.png" style="width: 100px; height: 100px; border-radius: 5px;"><br>
+      the syntax for the css for border radius will be following:<br><br>
+      
+      image{<br>
+      width: 100px; //this is for how wide your image or element is, you can change the pixels <br>
+      height: 100px; //this is for how tall your image or element is, you can change the pixels<br>
+      border-radius: 5px; //this is for the border radius or how rounded your edges will be<br>
+      }<br>
+   
+  </div>
+</div>
+    </center>
+    
+    
+    <center>  <!--for the lessons in javascript width and height-->
+   <div id="introjava">  
+  <div>
+      <button style = "width: 100px; height: 50px" onclick="myButton()">this button have javascript</button><br><br>
+      
+
+      in order to create sa simple javascript code is you needed a script tag. it includes an opening and closing tag and it's called script. to make it more understandable i'll give an example.<br><br>
+      &lt;script&gt;<br>this is where all of the syntax in javascript should be<br>
+      &lt;/script&gt;<br><br>
+      
+      an example for creating a function is to create an element such as button or input type.<br>
+      after creating an element you needed to create an onclick function.<br><br>
+      this button is an example of an onclick.<br>
+      &lt;button onclick = "yourFunction()"&gt; &lt;/button&gt;<br><br>
+      now we have a button with an onclick called yourFunction<br><br> 
+      <strong>NOTE: always remember to put open and close parenthesis in your onclick and your function in your script tag.</strong><br><br>
+      
+      now how about for the javascript?.<br><br>
+      javascript has wide functions or commands to explore. but for now we will use the <strong>getElementById</strong> command<br><br>
+
+      
+      Firstly, we will use the DOM (Document Object Model). The DOM is like a remote control for your website—it allows you to interact with and change your page using JavaScript. You'll write the DOM manipulation code inside &lt;script&gt; tags in your HTML file.<br><br>
+
+      In the syntax document.getElementById, the word document refers to the DOM, which represents the entire web page loaded in the browser.<br><br>
+      now the line getElementById. this refers to an element where you'll get an element with an ID in your html code.<br><br>
+      this is an example of a complete syntax of a command in javascript.<br><br>
+      
+      document.getElementById("yourId");<br><br>
+      
+      
+      
+      
+      
+      
+  </div>
+</div>
+    </center>
+    
+    <center>  <!--for the lessons in javascript width and height-->
+   <div id="jslesson2">  
+  <div>
+      <img src="hover.png" style = "width: 50p; height: 50px; display: none" id = "appear"><br><br>
+      
+      <button onclick="displayimg()">click me to display an image</button><br><br>
+      this is a trick for javascript for appearing an element, this will be our syntax to play with.<br><br>
+       document.getElementById("yourId");<br><br>
+      to add a display command in this syntax we will be using a display property in the javascript.<br><br>
+      the following syntax is the display property of an element in javascript.<br><br>
+      document.getElementById("form").style.display = "block";<br><br>
+      we used the display block property in this syntax.<br>
+      
+      
+      
+  </div>
+</div>
+    </center>
+    
+    
+    <center>  <!--for the lessons in javascript width and height-->
+   <div id="jslesson3">  
+  <div>
+      for this lesson i ask you to type the syntax for creating:<br><br> 
+      a syntax with dom<br> 
+      getting the Id of an element. the given ID is "exercise"<br><br>
+      <strong>NOTE: the word by, element and id should have their first letter be capitalized</strong><br><br>
+      
+      <input type="text" placeholder="input the given problem"  id="answer" style="width: 500px;"><br><br>
+      <button onclick="submitted()">submit your answer</button>
+  </div>
+</div>
+    </center>
+
+    
+    <center>  <!--for the lessons in javascript width and height-->
+   <div id="jslesson4">  
+  <div>
+      CONGRATULATIONS!!!<br><br> 
+      you have made it this far i hope you can get this final exercise.<br> 
+      the final exercise will be answering this 2 questions. are you ready?<br><br>
+      what's the document in the syntax document.getElementById?<br>
+      A: DOM<br>
+      B: DOOM<br>
+      C: BOM<br>
+      D: BOOM<br>
+      <input type="text" placeholder="input your answer"  id="answer1" style="width: 500px;"><br><br>
+      <button onclick="submitted1()">submit your answer</button><br><br>
+      
+      what's does DOM means?<br>
+      A: digital onscreen menu<br>
+      B: document object model<br>
+      C: digital onscreen model<br>
+      D: none of the above<br>
+      <input type="text" placeholder="input your answer"  id="answer2" style="width: 500px;"><br><br>
+      <button onclick="submitted2()">submit your answer</button>
+       </div>
+</div>
+    </center>
+
+
+<script>
+
+    //for the login
+function login() {
+  const user = document.getElementById("user");
+  const pass = document.getElementById("pass");
+
+  if (user.value === "admin" && pass.value === "admin") {
+    document.getElementById("table").style.display = "table";
+    document.getElementById("form").style.display = "none";
+    document.getElementById("header").style.display = "block";
+    document.getElementById("logo").style.display = "inline-block";
+    document.getElementById("products").style.display = "block";
+
+  
+          document.getElementById("td1").style.display = "inline";
+                document.getElementById("td2").style.display = "inline"; 
+                document.getElementById("td3").style.display = "inline"; 
+      
+  } else {
+    user.style.border = "1px solid red";
+    pass.style.border = "1px solid red";
+      alert("invalid account");
+  }
+}
+        //for the show password
+    
+    
+
+function showpass() {
+  
+  if (pass.type == "password") {
+    pass.type = "text";
+  } else {
+    pass.type = "password";
+  }
+}
+
+
+function all_html(){
+document.getElementById("table").style.display = "none";
+document.getElementById("td1").style.display = "none";
+document.getElementById("td2").style.display = "none";
+document.getElementById("td3").style.display = "none";
+
+document.getElementById("html_guide").style.display = "table";
+document.getElementById("img_field").style.display = "table";
+document.getElementById("img_input").style.display = "table";
+document.getElementById("img_table").style.display = "table";
+document.getElementById("img_insert").style.display = "table";
+
+}
+  
+  
+  function all_css(){
+
+document.getElementById("table").style.display = "none";
+document.getElementById("td1").style.display = "none";
+document.getElementById("td2").style.display = "none";
+document.getElementById("td3").style.display = "none";
+
+document.getElementById("css_guide").style.display = "table";
+document.getElementById("img_hover").style.display = "table";
+document.getElementById("img_display").style.display = "table";
+document.getElementById("img_hw").style.display = "table";
+document.getElementById("img_radius").style.display = "table";
+
+}
+  
+  
+  
+  function all_js(){
+
+document.getElementById("table").style.display = "none";
+document.getElementById("td1").style.display = "none";
+document.getElementById("td2").style.display = "none";
+document.getElementById("td3").style.display = "none";
+
+document.getElementById("js_lesson").style.display = "table";
+document.getElementById("img_dom").style.display = "table";
+document.getElementById("img_jsdis").style.display = "table";
+document.getElementById("img_firstex").style.display = "table";
+document.getElementById("img_lastex").style.display = "table";
+
+}
+  
+  
+  //the home button
+  
+  function home(){
+//to show the categories
+document.getElementById("table").style.display = "table";
+document.getElementById("td1").style.display = "table";
+document.getElementById("td2").style.display = "table";
+document.getElementById("td3").style.display = "table";
+      
+      
+      //to not show the categories of html
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+      
+      
+//to not show the categories of css
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+      
+      
+    //to not show the categories of javascript
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+      
+document.getElementById("lessonhtml").style.display = "none";
+document.getElementById("input").style.display = "none";
+document.getElementById("lessontable").style.display = "none";
+document.getElementById("insertimg").style.display = "none";
+
+document.getElementById("hoverring").style.display = "none";
+document.getElementById("displaying").style.display = "none";
+document.getElementById("widhei").style.display = "none";
+document.getElementById("radius").style.display = "none";
+      
+document.getElementById("introjava").style.display = "none";
+document.getElementById("jslesson2").style.display = "none";
+document.getElementById("jslesson3").style.display = "none";
+document.getElementById("jslesson4").style.display = "none";
+
+
+}
+
+    function products(){
+
+document.getElementById("table").style.display = "none";
+document.getElementById("td1").style.display = "none";
+document.getElementById("td2").style.display = "none";
+document.getElementById("td3").style.display = "none";
+
+
+document.getElementById("css_guide").style.display = "table";
+document.getElementById("img_hover").style.display = "table";
+document.getElementById("img_display").style.display = "table";
+document.getElementById("img_hw").style.display = "table";
+document.getElementById("img_radius").style.display = "table";
+    
+document.getElementById("html_guide").style.display = "table";
+document.getElementById("img_field").style.display = "table";
+document.getElementById("img_input").style.display = "table";
+document.getElementById("img_table").style.display = "table";
+document.getElementById("img_insert").style.display = "table";
+    
+document.getElementById("js_lesson").style.display = "table";
+document.getElementById("img_dom").style.display = "table";
+document.getElementById("img_jsdis").style.display = "table";
+document.getElementById("img_firstex").style.display = "table";
+document.getElementById("img_lastex").style.display = "table";
+        
+        
+document.getElementById("lessonhtml").style.display = "none";
+document.getElementById("input").style.display = "none";
+document.getElementById("lessontable").style.display = "none";
+document.getElementById("insertimg").style.display = "none";
+
+document.getElementById("hoverring").style.display = "none";
+document.getElementById("displaying").style.display = "none";
+document.getElementById("widhei").style.display = "none";
+document.getElementById("radius").style.display = "none";
+      
+document.getElementById("introjava").style.display = "none";
+document.getElementById("jslesson2").style.display = "none";   
+document.getElementById("jslesson3").style.display = "none"; 
+document.getElementById("jslesson4").style.display = "none";   
+}
+    
+    //start of html lesson   
+    function field_lesson(){
+document.getElementById("lessonhtml").style.display = "inline-block";
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+        
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+        
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+        
+        
+    }
+    function input_lesson(){
+document.getElementById("input").style.display = "inline-block";
+        
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+        
+        
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+        
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+        
+    }
+    
+    
+    
+     function table_lesson(){
+document.getElementById("lessontable").style.display = "table";
+        
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+         
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+         
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+         
+    }
+    
+    function image_lesson(){
+document.getElementById("insertimg").style.display = "block";
+        
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+        
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+        
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+        
+//end of html lesson        
+
+    }
+    
+    function hover_lesson(){
+document.getElementById("hoverring").style.display = "block";
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+        
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+
+        
+    }
+   function display_lesson(){
+document.getElementById("displaying").style.display = "block";
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+       
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+       
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+        
+    }
+    
+    function hw_lesson(){
+document.getElementById("widhei").style.display = "block";
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+        
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+ 
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+
+        
+    }
+  
+  function radius_lesson(){
+document.getElementById("radius").style.display = "block";
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+      
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+      
+      
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+    
+
+    }
+    
+  function dom_lesson(){
+document.getElementById("introjava").style.display = "block";
+  
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+      
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+      
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+      
+    }
+    
+    function jsdis_lesson(){
+document.getElementById("jslesson2").style.display = "block";
+  
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+      
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+      
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+      
+    }
+    
+ function myButton() {
+    alert("Hello There hehe");
+}
+
+function displayimg(){
+document.getElementById("appear").style.display = "block";
+}
+    
+    function syntax_train(){
+document.getElementById("jslesson3").style.display = "block";
+  
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+      
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+      
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+      
+    }
+    
+    function submitted(){
+        if (answer.value === 'document.getElementById("exercise");'){
+            alert("correct");
+        }else{
+            alert("wrong");
+        }
+    }
+    function submitted1(){
+        if (answer1.value === 'A' || answer1.value === 'a'){
+            alert("correct");
+        }else{
+            alert("wrong");
+        }
+    }
+    function submitted2(){
+        if (answer2.value === 'B' || answer2.value === 'b'){
+            alert("correct");
+        }else{
+            alert("wrong");
+        }
+        
+    }
+    
+     function last_lesson(){
+document.getElementById("jslesson4").style.display = "block";
+  
+document.getElementById("js_lesson").style.display = "none";
+document.getElementById("img_dom").style.display = "none";
+document.getElementById("img_jsdis").style.display = "none";
+document.getElementById("img_firstex").style.display = "none";
+document.getElementById("img_lastex").style.display = "none";
+      
+document.getElementById("css_guide").style.display = "none";
+document.getElementById("img_hover").style.display = "none";
+document.getElementById("img_display").style.display = "none";
+document.getElementById("img_hw").style.display = "none";
+document.getElementById("img_radius").style.display = "none";
+      
+document.getElementById("html_guide").style.display = "none";
+document.getElementById("img_field").style.display = "none";
+document.getElementById("img_input").style.display = "none";
+document.getElementById("img_table").style.display = "none";
+document.getElementById("img_insert").style.display = "none";
+      
+    }
+        
+   
+
+</script>
+</body>
+</html>
